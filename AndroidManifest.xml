@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Shaktisetu">
+
+        <!-- EXISTING ACTIVITIES -->
+        <activity android:name=".RegisterActivity" android:exported="false" />
+        <activity android:name=".RoleActivity" android:exported="false" />
+        <activity android:name=".HomeActivity" android:exported="false" />
+        <activity android:name=".CategoryActivity" android:exported="false" />
+        <activity android:name=".WorkerJobsActivity" android:exported="false" />
+        <activity android:name=".JobDetailActivity" android:exported="false" />
+        <activity android:name=".ProviderActivity" android:exported="false" />
+        <activity android:name=".BookingActivity" android:exported="false" />
+        <activity android:name=".RatingActivity" android:exported="false" />
+        <activity android:name=".ProfileActivity" android:exported="false" />
+        <activity android:name=".TrainingActivity" android:exported="false" />
+        <activity android:name=".TrainingDetailActivity" android:exported="false" />
+        <activity android:name=".CertificateActivity" android:exported="false" />
+        <activity android:name=".PaymentActivity" android:exported="false" />
+        <activity android:name=".UPIActivity" android:exported="false" />
+        <activity android:name=".PaymentOptionActivity" android:exported="false" />
+        <activity android:name=".WorkerProfileActivity" android:exported="false" />
+        <activity android:name=".OTPActivity" android:exported="false" />
+        <activity android:name=".MyApplicationsActivity" android:exported="false" />
+        <activity android:name=".NotificationActivity" android:exported="false" />
+        <activity android:name=".ChatActivity" android:exported="false" />
+        <activity android:name=".WalletActivity" android:exported="false" />
+        <receiver android:name=".ReminderReceiver" android:exported="true" />
+        <activity android:name=".UserListActivity" android:exported="false" />
+        <activity android:name=".PaymentHistoryActivity" android:exported="false" />
+        <activity android:name=".WorkerRequestPaymentActivity" android:exported="false" />
+        <activity android:name=".ClientPaymentRequestsActivity" android:exported="false" />
+        <activity android:name=".WorkerBookingsActivity" android:exported="false" />
+        <activity android:name=".WorkerRatingsActivity" android:exported="false" />
+
+        <!-- MAIN LAUNCHER ACTIVITY -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

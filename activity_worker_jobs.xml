@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:background="@color/primary" android:padding="24dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:text="Available Jobs"
+            android:textSize="22sp" android:textStyle="bold" android:textColor="@color/white"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:text="Find your next opportunity"
+            android:textSize="13sp" android:textColor="#DEDEDE" android:layout_marginTop="4dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/jobList"
+        android:layout_margin="16dp"
+        android:divider="@color/divider"
+        android:dividerHeight="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

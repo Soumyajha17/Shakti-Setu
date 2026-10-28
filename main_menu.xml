@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_notifications"
+        android:title="Notifications"
+        android:icon="@android:drawable/ic_dialog_info"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_wallet"
+        android:title="Wallet"
+        android:icon="@android:drawable/ic_menu_save"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_chat"
+        android:title="Chat"
+        android:icon="@android:drawable/ic_menu_send"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_logout"
+        android:title="Logout"
+        android:icon="@android:drawable/ic_lock_power_off"
+        app:showAsAction="never"/>
+
+</menu>

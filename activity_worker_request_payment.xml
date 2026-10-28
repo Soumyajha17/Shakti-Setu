@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request Payment from Client"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Booking:"
+        android:textSize="14sp"
+        android:textColor="#757575"/>
+
+    <Spinner
+        android:id="@+id/bookingSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_bg"
+        android:padding="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount (₹):"
+        android:textSize="14sp"
+        android:textColor="#757575"/>
+
+    <EditText
+        android:id="@+id/amountEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter amount"
+        android:inputType="numberDecimal"
+        android:background="@drawable/edittext_bg"
+        android:padding="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="28dp"/>
+
+    <Button
+        android:id="@+id/requestPaymentBtn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="💸 Request Payment"
+        android:background="@drawable/button_primary_bg"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Back"
+        android:background="@drawable/button_outline_bg"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>

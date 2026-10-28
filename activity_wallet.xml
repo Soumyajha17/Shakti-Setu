@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Title -->
+    <TextView
+        android:text="💰 Wallet"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Balance Card -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/card_bg"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Available Balance"
+            android:textSize="14sp"
+            android:textColor="#777"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvBalance"
+            android:text="₹0"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="This amount is ready for withdrawal."
+            android:textSize="12sp"
+            android:textColor="#999"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Hold Card -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/card_bg"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="On-Hold Balance (Pending Approval)"
+            android:textSize="14sp"
+            android:textColor="#777"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvHold"
+            android:text="₹0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/error"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Funds move to Available after client marks job as completed."
+            android:textSize="11sp"
+            android:textColor="#999"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Withdraw Section -->
+    <LinearLayout
+        android:id="@+id/withdrawSection"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnWithdraw"
+            android:text="Withdraw Funds"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#2E7D32"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:text="Refresh Wallet Status"
+        android:textSize="14sp"
+        android:backgroundTint="@color/primary"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

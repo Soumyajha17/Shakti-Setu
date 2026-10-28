@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:background="@color/primary" android:padding="24dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:text="Payment History"
+            android:textSize="22sp" android:textStyle="bold" android:textColor="@color/white"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp" app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="20dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvPaymentDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/text_primary"
+                android:lineSpacingExtra="6dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
